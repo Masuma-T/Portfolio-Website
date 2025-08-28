@@ -23,6 +23,7 @@ This is a practice website I built while learning web development. It allowed me
 - Practice with **GitHub workflow** (pushing, committing, and hosting on GitHub Pages)  
 
 ## 🚀 Live Demo  
-👉 [View Website Here](https://YOUR-USERNAME.github.io/my-website/)  
+👉 [View Website Here](https://github.com/Masuma-T/Portfolio-Website.git) 
+
 
 ## 📂 Project Structure  
