@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuma | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Background frame wrapper -->
+  <div class="page-frame">
+    <!-- Centered content window -->
+    <main class="content-window">
+       
+      <!-- Social Icons -->
+      <div class="social-links">
+        <a href="https://github.com/Masuma-T" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/masoomatahir" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:masumat00@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+
+      <!-- Hamburger + Popup Nav -->
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </button>
+
+      <nav class="nav-circle">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sunflower GIF -->
+      <div class="sunflower-gif">
+        <img src="images/sunflower.gif" alt="sunflower Animation">
+      </div>
+
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <h1>Hi, I’m Masuma</h1>
+        <h2>I am a <span class="typing"></span></h2>
+        <p class="hero-subtext">"Crafting websites that are as bright and bold as your ideas."</p>
+        <a href="#about" class="down-arrow">↓</a>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+          <div class="about-image">
+            <img src="images/blob.png" alt="Watercolor Blob" class="blob">
+            <img src="images/profile pic.png" alt="Masooma Profile Picture" class="profile">
+          </div>
+          <div class="about-bio">
+            <p>🙋‍♀️ Hi, I’m Masooma</p>
+            <p>📍 From Calgary, Alberta → now in Toronto, Canada</p>
+            <p>🎓 Mechanical Engineering graduate from the University of Calgary</p>
+            <p>🛠️ Previously Project Engineer-in-Training at Obsidian Engineering</p>
+            <p>💻 Currently learning new programming languages</p>
+            <p>✉️ Contact me at <a href="mailto:masumat00@gmail.com">masumat00@gmail.com</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <h2>My Projects</h2>
+      <div class="project-gallery">
+          <!-- Project 1 -->
+            <a href="projects.html#project1" class="project-card">
+              <img src="images/logo.png" alt="Jiffy Listings Project">
+              <h3>Jiffy Listings</h3>
+            </a>
+
+            <a href="projects.html#project2" class="project-card">
+              <img src="images/portfolio.png" alt="Portfolio Website Project">
+              <h3>Portfolio Site</h3>
+            </a>
+
+          <!-- Project 3 -->
+            <a href="projects.html#project3" class="project-card">
+              <img src="images/butterfly.png" alt="Quote Generator Project">
+              <h3>Quote Generator Project</h3>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="projects.html#project4" class="project-card">
+              <img src="images/honey-bee.webp" alt="Joke Generator Project">
+              <h3>Joke Generator Project</h3>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="projects.html#project5" class="project-card">
+              <img src="images/YC4FSN logo.png" alt="UI/UX Web Design">
+              <h3>UI/UX Web Design</h3>
+
+           </a>
+          </div>
+      </section>
+
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <div class="contact-content">
+            <h2>Get in Touch</h2>
+            <p>Have a project in mind or just want to say hello? I’d love to hear from you!</p>
+            <form class="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-image">
+            <img src="images/sunflower3.png" alt="sunflower">
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

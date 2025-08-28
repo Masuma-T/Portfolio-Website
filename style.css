@@ -1,0 +1,698 @@
+/* Background Frame */
+.page-frame {
+  background: url('images/background-frame.jpg') center/cover no-repeat;
+  min-height: 150vh;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+} 
+
+/* Content Window */
+.content-window {
+  background: #fff;
+  max-width: 1500px;
+  width: 100%;
+  padding: 2rem 3rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}  
+
+
+/* Brush / Sunflower GIF */
+.sunflower-gif {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.sunflower-gif img {
+  width: 140px;
+  height: auto;
+}
+
+/* header social media icons */
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: transparent;
+}
+
+/* Social Links - horizontall top left */
+.social-links {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 1000;
+}
+.social-links a {
+  font-size: 1.8rem;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.social-links a:hover {
+  color: #f59e0b;
+  transform: scale(1.2);
+}
+
+/* Typography */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.8rem;
+  color: #444;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+/* Hero Sectiion */
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 62vh;
+  padding-top: 5rem;
+  position: relative;
+  gap: 1rem;
+}
+.hero-subtext {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Scroll Down Arrow */
+.down-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #FFD85C;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-top: 8rem;
+  animation: bounce 1.5s infinite;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* Typing Section */
+.typing {
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 5px;
+  border-right: 2px solid #333;
+}
+.role-web {
+  color: #FF4081;
+}
+.role-problem {
+  color: #FFD700;
+}
+.role-creative {
+  color: #00BFFF;
+}
+
+/* About Section */
+.about {
+  background: #fff8e7;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: visible;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+}
+.about-image {
+  position: relative;
+  flex: 0 0 450px;
+}
+.about-image .blob {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  z-index: 1;
+}
+.about-image .profile {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+.about-bio {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Projects Section */
+.projects {
+  position: relative;
+  background: #fffef8;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 2rem;
+}
+
+/* Project gallery as responsive row */
+.projects .project-gallery {
+  display: flex;
+  flex-wrap: wrap;         /* this will wrap to next line on smaller screens */
+  justify-content: center; /* this will center the projects */
+  gap: 2rem;               /* this function will create space between cards */
+}
+
+/* Project cards (folder icons) */
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 150px;             /* I want fixed width for all icons */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 80px;  /* folder icon size */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.project-card a:hover h3 {
+  color: #FFD85C;             /* changes to yellow on hover */
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #FFB347;             /* orange */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Hamburger */
+.hamburger {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.hamburger.active .top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active .middle {
+  opacity: 0;
+}
+.hamburger.active .bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Quarter Circle Nav */
+.nav-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle at top right, #FFD85C, #FFB347, #FF7E5F);
+  border-bottom-left-radius: 100%;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.nav-circle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.nav-circle li {
+  margin: 0.3rem 0;
+}
+.nav-circle a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+.nav-circle a:hover,
+.nav-circle a.active {
+  color: #333;
+}
+.nav-circle.open {
+  transform: scale(1);
+}
+
+/* Scroll behavior */
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+}
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: center;   /* this centers horizontally */
+  align-items: center;       /* this will centers vertically */
+  min-height: 80vh;
+  padding: 2rem;
+  background: #fdfaff;
+  position: relative;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1100px;   /* controls total width */
+  width: 100%;
+  margin: 0 auto;      /* iwant the everything balanced */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 1;
+  flex-direction: row-reverse;
+}
+
+/* form/content */
+.contact-content {
+  flex: 1; /* half width */
+  padding: 2rem 3rem;
+}
+
+.contact-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #ff4081;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e73370;
+}
+
+/* image */
+.contact-image {
+  flex: 1; /* half width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Projects Page Container */
+/* Page frame and content window */
+.projects-page .page-frame {
+  display: block;       
+  padding: 5rem;        /* wiil create less padding */
+  overflow: visible;    /* wil allow content to expand */
+}
+
+.projects-page .content-window {
+  padding: 0.1rem;
+  overflow: visible;
+}
+
+/* Hero section */
+.projects-page .projects-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 7rem;     /* space above the title and subtext */
+}
+
+.projects-page .projects-hero .hero-subtext {
+  text-align: center;       /* this ensures the paragraph centers */
+  max-width: 600px;         
+  margin: 0 auto 7rem; /* 7rem of space below */
+  color:  #FFB347; /* bright yellow */
+  font-weight: 600; /* slightly bolder */ 
+}
+
+.projects-page .project-card .role-tools-text {
+  color: #FFB347; /* orangish color */
+}
+
+
+/* Project card section */
+.projects-page .project-card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+/* Individual cards */
+.projects-page .project-card {
+  width: 100%;
+  max-width: 700px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  border: 2px solid rgba(255, 163, 71, 0.3); /*  orange border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.projects-page .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 163, 71, 0.4); /* orange glow on hover */
+  border-color: rgba(255, 163, 71, 0.6); /*  border on hover */
+}
+
+
+.projects-page .project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* will remove global section height that will (prevents cutting off content) */
+.projects-page section {
+  height: auto;
+  display: block;
+}
+
+.projects-page .button-link {
+  display: inline-block;
+  margin: 1rem 0;                 /* spacing above/below */
+  padding: 0.7rem 1.8rem;         /* button size */
+  background: linear-gradient(90deg, #FFD85C, #FFB347); /* sunflower gradient */
+  color: #fff;                     /* white text */
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.projects-page .button-link:hover {
+  background: linear-gradient(90deg, #FFB347, #FF7E5F); /* darker on hover */
+  transform: translateY(-2px);
+}
+
+
+/* responsive media code */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  /* Stack about section */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-image {
+    flex: 0 0 60%;
+    margin-bottom: 1rem;
+  }
+  .about-bio {
+    font-size: 1rem;
+  }
+
+  /* Projects gallery: 2 per row */
+  .projects .project-gallery {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .project-card {
+    width: 45%;
+    max-width: 700px;
+  }
+}
+
+/* Small phones (iPhone SE / 600px wide) */
+
+@media (max-width: 930px) {
+  .page-frame {
+    padding: 2rem;
+    min-height: auto;
+    align-items: flex-start;
+  }
+
+  .content-window {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding-top: 3rem;
+    height: auto;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .down-arrow {
+    display: none !important;
+  }
+
+  .about {
+    margin-top: 5rem; 
+  }
+
+  .projects {
+    margin-top: 10rem; 
+  }
+
+  .contact-section {
+    margin-top: 10rem; 
+  }
+  
+  .contact-form {
+    width: 90%;
+    max-width: 300px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  } 
+
+  .contact-section {
+    flex-direction: column;
+    padding: 1rem;
+    min-height: auto;  /*Prevent vertical overflow */
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 1rem;
+    width: 100%;
+  } 
+
+  .contact-image {
+    order: -1;  /*Moves image to the top  */
+  }  
+
+  .contact-image img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+  } 
+
+  .about-image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .about-bio {
+    font-size: 1rem;
+    text-align: center;
+  }
+/* proejct section repsonsive */
+  .projects {
+    padding: 2rem 1rem;
+  }
+
+  .project-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 300px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-card img {
+    width: 60px;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .nav-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .social-links {
+    top: 1rem;
+    left: 1rem;
+    gap: 0.5rem;
+  }
+
+  .sunflower-gif img {
+    width: 100px;
+  }
+
+/* project page responsive */
+.projects-page .content-window {
+  padding: 0.05rem;
+  overflow: visible;
+}
+
+.projects-page .project-card-section {
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.projects-page .project-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+/* Page frame and content window */
+.projects-page .page-frame {
+  display: block;
+  padding: 1rem 1rem;
+  margin: 0 auto;         /* centers the content */
+  overflow: visible;
+}
+
+}
