@@ -27,3 +27,4 @@ This is a practice website I built while learning web development. It allowed me
 
 
 ## 📂 Project Structure  
+tree /f
