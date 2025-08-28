@@ -27,4 +27,11 @@ This is a practice website I built while learning web development. It allowed me
 
 
 ## 📂 Project Structure  
-tree /f
+my-website/
+│── index.html # Main webpage
+│── style.css # Styles and layout
+│── script.js # Interactive JavaScript
+│── images/ # Image assets
+│ ├── profile.png
+│ └── background-frame.jpg
+└── README.md # Project documentation
