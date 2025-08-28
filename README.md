@@ -29,10 +29,10 @@ This is a practice website I built while learning web development. It allowed me
 ## 📂 Project Structure  
 
 my-website/
-##│── index.html
-##│── style.css
-##│── script.js
-##│── images/
-##│   ├── profile.png
-##│   └── background-frame.jpg
-##└── README.md
+- index.html
+- style.css
+- script.js
+- images/
+-    profile.png
+-    background-frame.jpg
+-    README.md
